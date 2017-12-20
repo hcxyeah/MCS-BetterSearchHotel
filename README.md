@@ -1,4 +1,4 @@
-## Airbnb Search System With NLP
+## Airbnb Search System With Text Mining
 
 ### Overview
 This app implements topic modeling, frequent phrase mining and sentiment analysis
