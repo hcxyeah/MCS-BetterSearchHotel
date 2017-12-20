@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="resource/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css"
+				href="resource/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+	<script type="text/javascript"
+					src="resource/jQuery-3.2.1/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript"
+					src="resource/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="resource/datatables.min.js"></script>
+	<script type="text/javascript" src="resource/jquery.csv.min.js"></script>
+	<script src="Script.js"></script>
+</head>
+
+<body>
+
+<div id="tagGroup">
+</div>
+
+<div class="tab">
+	<button class="tablinks active" onclick="openSection(event, 'Listings')">Listings</button>
+	<button class="tablinks" onclick="openSection(event, 'Topic')">Topic Modeling</button>
+</div>
+
+
+<div id="Listings" class="tabcontent" style="display:block">
+	<div class="container">
+	  <div class="table-responsive">
+	      <div id="tableContainer">
+	          <h2>Loading...</h2>
+	      </div>
+	  </div>
+	</div>
+</div>
+
+<div id="Topic" class="tabcontent">
+</div>
+
+</body>
+
+
+</html>

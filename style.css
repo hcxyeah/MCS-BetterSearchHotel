@@ -1,0 +1,92 @@
+.node text {
+    font: 10px sans-serif;
+}
+
+.node--internal circle {
+    fill: #555;
+}
+
+.node--internal text {
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.link {
+    fill: none;
+    stroke: #7b6888;
+    stroke-opacity: 0.4;
+    stroke-width: 1.5px;
+}
+
+.node {
+  fill: #7b6888;
+  opacity: 0.7;
+}
+
+.tag.btn.btn-info {
+  height: 30px;
+  font-size:15px;
+  color:black;
+  border-color:#e5e5e5;
+  background-color:white;
+  margin-left: 2px;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.tag.btn.btn-info.selected {
+  color:white;
+  background-color:#7b6888;
+}
+
+.tag.btn.btn-info.selected:hover {
+  color:white;
+  background-color:#7b6888;
+}
+
+.tag.btn.btn-info:hover {
+  border-color:#7b6888;
+  color:##7b6888;
+}
+
+
+
+#table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+div.tab {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+	}
+
+div.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+div.tab button:hover {
+	background-color: #ddd;
+}
+
+div.tab button.tablinks.active {
+	background-color: #ccc;
+}
+
+#Reason {
+	display: block;
+}
+
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
