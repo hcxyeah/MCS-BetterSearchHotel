@@ -17,11 +17,12 @@ Each house has text data on summary, space, description, neighborhood overview, 
 This is done using [SegPhrase](https://github.com/shangjingbo1226/SegPhrase) mining technology. SegPhrase mines phrase with tiny set of training data.
 The essential idea is to feed a small set of training data into mining process.
 ##### 2. Topic Modeling
-This project uses LDA algorithm to conduct topic modeling on the listings description data. The text data is preprocessed with the following steps: stemming, removing stop words, eliminating words that have document frequency smaller than 0.1 and bigger than 0.9 removed.
+This project uses LDA algorithm to conduct topic modeling on the listings description data. The text data is preprocessed with the following steps: stemming, removing stop words, eliminating words that have document frequency smaller than 0.1 and bigger than 0.9 removed. For each subset of the listings (filtered by the frequent phrase), ten topics are generated, each of which is represented by 15 words. 
+
 ##### 3. Sentiment analysis
 This project uses the [Stanford Sentiment Analysis tool](https://d396qusza40orc.cloudfront.net/dataminingcapstone/Tasks4and5/sentimentAnalysis.jar) to conduct
 sentiment analysis on the reviews data for each listing is used to conduct SentimentAnalysis.
-The output sentiment score is from 1-5, with 1 means very negative and 5 means very positive.
+The output sentiment score is from 1-5, with 1 means very negative and 5 means very positive. The score of a house is the average of all the reviews under this house posting. 
 
 ### How to use
 The website can be access [here](https://hcxyeah.github.io/MCS-BetterSearchHotel/). There are three parts of the web page: frequent phrases tags, airbnb listings, and topic modeling
