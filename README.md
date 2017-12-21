@@ -15,7 +15,7 @@ Each house has text data on summary, space, description, neighborhood overview, 
 ### Technologies Used in this application
 ##### 1. Frequent Phrase mining
 This is done using [SegPhrase](https://github.com/shangjingbo1226/SegPhrase) mining technology. SegPhrase mines phrase with tiny set of training data.
-The essential idea is to feed a small set of training data into mining process.
+The essential idea is to feed a small set of training data into mining process. In this project, I produced a training list of phrases and feed it into the algorithm to get a list of frequent phrase.
 ##### 2. Topic Modeling
 This project uses LDA algorithm to conduct topic modeling on the listings description data. The text data is preprocessed with the following steps: stemming, removing stop words, eliminating words that have document frequency smaller than 0.1 and bigger than 0.9 removed. For each subset of the listings (filtered by the frequent phrase), ten topics are generated, each of which is represented by 15 words. 
 
@@ -31,8 +31,8 @@ result.
 Here are some steps of how to use the web page:
 1. Select a phrase out of the frequent phrases list.
 ![page](webpage.png)
-2. A table of airbnb listings will show up on Listing tab. When browsing the listings, user can re-order the list by sentiment score to look at the most positive/negative result.
-3. On Topic tab is the visualization of the topic modeling on the filtered airbnb listings description text data. User can re-select the phrase tag to update the topic graph.
+2. A table of airbnb listings will show up on Listing tab. When browsing the listings, user can re-order the list by sentiment score by clicking on the sentiment_score header to look at the most positive/negative result.
+3. On Topic tab is the visualization of the topic modeling on the filtered airbnb listings description text data. User can re-select the phrase tag to update the topic graph. Mouse hover over the topic will highlight the topic.
 ![topic](topics.png)
 
 
