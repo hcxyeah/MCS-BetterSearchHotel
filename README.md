@@ -1,18 +1,18 @@
-## Airbnb Search System With Text Mining
+# Airbnb Search System With Text Mining
 
-### Overview
+## Overview
 This app implements topic modeling, frequent phrase mining and sentiment analysis
 on airbnb listings and reviews data to allow user to search hotel easier by filtering the listings by key words extracted from the listing descriptions, order the listings by reviews' sentiment score.
 Also, topic modeling is implemented to allow user to discover the topics of
 listings descriptions. This system is delivered as a web page. A small set of listings data is used to build the web page.
 
-### Data
+## Data
 
 The system is built on a small set of airbnb hotel data. The data is downloaded from
 [Kaggle](https://www.kaggle.com/airbnb/seattle). This dataset contains of 3818 house postings in Seattle WA and 84849 reviews data.
 Each house has text data on summary, space, description, neighborhood overview, notes and transit.
 
-### Technologies Used in this application
+## Technologies Used in this application
 ##### 1. Frequent Phrase mining
 This is done using [SegPhrase](https://github.com/shangjingbo1226/SegPhrase) mining technology. SegPhrase mines phrase with tiny set of training data.
 The essential idea is to feed a small set of training data into mining process. In this project, I produced a training list of phrases and feed it into the algorithm to get a list of frequent phrase.
@@ -24,7 +24,7 @@ This project uses the [Stanford Sentiment Analysis tool](https://d396qusza40orc.
 sentiment analysis on the reviews data for each listing is used to conduct SentimentAnalysis.
 The output sentiment score is from 1-5, with 1 means very negative and 5 means very positive. The score of a house is the average of all the reviews under this house posting. 
 
-### How to use
+## How to use
 The website can be access [here](https://hcxyeah.github.io/MCS-BetterSearchHotel/). There are three parts of the web page: frequent phrases tags, airbnb listings, and topic modeling
 result.
 
@@ -36,7 +36,7 @@ Here are some steps of how to use the web page:
 ![topic](topics.png)
 
 
-### Limitation
+## Limitation
 The webpage is a very simplified version as it's just a place to dilever the analysis result and ideas. The key part
 of this project is the analysis on the text data and the web page is just micmic the real world scenario. The data used in this project is a small set. In real world as
 the data scales, the efficiency of the analysis may reduce.
